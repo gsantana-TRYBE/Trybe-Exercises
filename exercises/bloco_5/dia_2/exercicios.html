@@ -56,34 +56,11 @@
     </style>
   </head>
   <body>
-    <h1>Exercício 5.2 - JavaScript DOM</h1>
-    <div class="main-content">
-        <div class="center-content">
-            <p>Estou cansado</p>
-        </div>
-        <div class="left-content">
-            <img src="https://picsum.photos/200" class="small-image">
-        </div>
-        <div class="right-content">
-            <ul>
-                <li>Um</li>
-                <li>Dois</li>
-                <li>Três</li>
-                <li>Quatro</li>
-                <li>Cinco</li>
-                <li>Seis</li>
-                <li>Sete</lis>
-                <li>Oito</li>
-                <li>Nove</li>
-                <li>Dez</li>
-            </ul>
-        </div>
-        <h3>Primeiro h3</h3>
-        <h3>Segundo h3</h3>
-        <h3>Terceiro h3</h3>
-    </div>
     <script>
-      // COLOQUE SEU CÓDIGO AQUI
+      let body=document.querySelector("body");
+      let h1=document.createElement('h1');
+      h1.innerText="Exercício 5.2 - JavaScript DOM";
+      body.appendChild(h1);
     </script>
   </body>
 </html>
