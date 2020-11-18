@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang='pt-br'>
+<head>
+    <meta charset="UTF-8">
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Currículo</title>
+</head>
+<body>
+    <form action="" method='GET' enctype="multipart/form-data">
+        <fieldset id='personal-data'>
+            <label for='name'>Nome:
+                <input type='text' id='name' maxlength='40' required placeholder="Digite seu nome.">
+            </label>
+            <br>
+            <br>
+            <label for='email'>E-mail:
+                <input type='text' id='email' maxlength='50' required placeholder="Digite seu e-mail.">
+            </label>
+            <br>
+            <br>
+            <label for='CPF'>CPF:
+                <input type='text' id='CPF' maxlength='11' required placeholder="Digite seu CPF.">
+            </label>
+            <br>
+            <br>
+            <label for='address'>Endereço:
+                <input type='text' id='address' maxlength='200' required placeholder="Digite seu endereço.">
+            </label>
+            <br>
+            <br>
+            <label for='city'>Cidade:
+                <input type='text' id='city' maxlength='28' required placeholder="Digite sua cidade.">
+            </label>
+            <br>
+            <br>
+            <label for='state-dropdown'>Escolha seu estado:
+                <select name='state' id='state-dropdown' required></Select>
+            </label>
+            <br>
+            <br>
+            <p>Escolha tipo de moradia:</p>
+            <label for='housing-house'>
+                <input type='radio' id='housing-house' name='housing' required>Casa
+            </label>
+            <label for='housing-building'>
+                <input type='radio' id='housing-building' name='housing' required>Apartamento
+            </label>
+
+        </fieldset>
+        <fieldset id='last-job'>
+            <label for='resume'>Resumo do seu currículo.
+                <br>
+                <textarea id='resume' maxlength='1000' required cols='20' rows='5'></textarea>
+            </label>
+            <br>
+            <br>
+            <label for='position'>Cargo:
+                <input type="text" id="position" maxlength="40" required>
+            </label>
+            <br>
+            <br>
+            <label for='position-description'>Descreva o cargo:
+                <input type="text" id="position-description" maxlength="500" required>
+            </label>
+            <br>
+            <br>
+            <label for='start-date'>Data de início:
+                <input type="date" id="start-date" required>
+            </label>
+        </fieldset>
+        <button id='preview-btn'>Revisar dados</button>
+    </form>
+    <script src=script.js></script>
+</body>
+</html>
