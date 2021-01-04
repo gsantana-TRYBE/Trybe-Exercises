@@ -1,0 +1,47 @@
+body{
+    background-color:rgb(238, 120, 189) ;
+}
+#Foto_mantis_shrimp{
+    float:left;
+    margin-right:25px;
+    height:200px;
+}
+#eyes{
+    clear:both;
+    border-top: royalblue solid 3px;
+    border-bottom:royalblue solid 3px ;
+}
+#foto_eyes{
+    float:left;
+    margin-right: 25px;
+    width:300px;
+    height:100px;
+}
+#behavior{
+    clear:both;
+    border-bottom:royalblue solid 3px ;
+}
+#aggression{
+    float:left;
+    margin-right:25px;
+    height:200px;
+    width:300px    
+}
+span.vermelho{
+    color:red;
+}
+span.verde{
+    color:green;
+}
+span.azul{
+    color:blue;
+}
+span.destaque{
+    color:rgb(234, 238, 11)
+}
+#Início{
+    text-align: center;
+}
+#referências{
+    border-bottom:royalblue solid 3px ;
+}
