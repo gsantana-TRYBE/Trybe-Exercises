@@ -1,6 +1,5 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import TextArea from './TextArea';
 
 class Form extends React.Component {
   constructor() {
@@ -52,14 +51,8 @@ class Form extends React.Component {
             value={this.state.check}
             onChange={this.handleChange}
           />
-          <label>
-            Diga qual o seu Estado favorito! De React ou do Brasil, você decide! =)
-              <textarea
-              name="estadoFavorito"
-              value={this.state.estadoFavorito}
-              onChange={this.handleChange} />
-          </label>
-          <input
+          <TextArea evalue={this.state.estadoFavorito} handleChange={this.handleChange} />
+          < input
             type='file'
             name='arquivo'
             value={this.state.arquivo}
