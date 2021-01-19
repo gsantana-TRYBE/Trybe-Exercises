@@ -10,6 +10,8 @@ class App extends Component {
     this.handleChange = this.handleChange.bind(this)
     this.fixAddres = this.fixAddress.bind(this)
     this.handleOnBlur = this.handleOnBlur.bind(this)
+    this.handleOnMouseEnter = this.handleOnMouseEnter.bind(this)
+
     this.state = {
       nome: '',
       email: '',
@@ -17,7 +19,10 @@ class App extends Component {
       endereco: '',
       cidade: '',
       estado: '',
-      tipoAP: ''
+      tipoAP: '',
+      curriculo: '',
+      cargo: '',
+      descricaoCargo: ''
     };
 
 
@@ -47,11 +52,16 @@ class App extends Component {
     })
   }
 
+  handleOnMouseEnter({ target }) {
+    alert('Preencha com cuidado essa informação')
+  }
+
   render() {
     return (
       <div>
         <form>
           <fieldset>
+            <legend>Dados pessoais</legend>
             <label>Nome
               <input
                 type="name"
@@ -113,6 +123,40 @@ class App extends Component {
                 {states.map((value, key) =>
                   <option key={key}>{value}</option>)}
               </select>
+            </label>
+          </fieldset>
+          <fieldset>
+            <legend>Último emprego</legend>
+            <label>Currículo
+              <input
+                type='textarea'
+                name='curriculo'
+                value={this.state.curriculo}
+                required
+                maxLength='1000'
+                onChange={this.handleChange}
+              />
+            </label>
+            <label>Cargo
+              <input
+                type='text'
+                name='cargo'
+                value={this.state.cargo}
+                required
+                maxLength='40'
+                onChange={this.handleChange}
+                onMouseEnter={this.handleOnMouseEnter}
+              />
+            </label>
+            <label>Descrição do cargo
+              <input
+                type='textarea'
+                name='descricaoCargo'
+                value={this.state.descricaoCargo}
+                required
+                maxLength='500'
+                onChange={this.handleChange}
+              />
             </label>
           </fieldset>
         </form>
